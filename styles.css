@@ -1,344 +1,200 @@
 body {
-  margin: 12px;
-  font-family: "Alkatra", cursive;
-  font-family: "Happy Monkey", cursive;
-  overflow-x: hidden;
+
+    background: url(images/izmirsea.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eee;
+
 }
 
-iframe {
-  border: none;
+.header {
+    height: 40vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-image: url('https://www.dominicanabroad.com/wp-content/uploads/2020/08/Things-to-Do-in-Izmir-Day-Trips-5.jpg');
+
 }
 
-header {
-  background-image: url(https://zelihapala.github.io/images/silicon.webp);
-  background-size: cover;
-  color: rgba(30, 39, 83, 0.945);
-  padding: 20px;
-  text-align: center;
-  font-size: 50px;
-  background-position: center;
-  text-shadow: 7px 5px rgba(255, 255, 255, 0.973);
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.btn {
-  display: flex;
-  float: right;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 10px 20px;
-  border: 3px solid white;
-  border-radius: 60px;
-  background-color: rgba(6, 114, 114, 0.993);
-  color: white;
-  font-size: 15px;
-  font-family: "Alkatra", cursive;
-  font-family: "Happy Monkey", cursive;
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0px;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
 }
 
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-shadow: 4px black;
+    
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+/* HOVER transform uste geldigimizde oynatmak icin */
 .btn:hover {
-  background: rgb(11, 21, 36);
-  font-size: 17px;
+    transform: translateY(-9px); 
+    box-shadow: 0 100px 20px rgba(17, 16, 16, 0.2);
 }
 
-.search-box {
-  max-width: 60px;
-  position: relative;
+.btn-white {
+    background-color: rgb(243, 243, 243);
+    color: rgb(116, 113, 113);
+    font-size: 15px;
 }
 
-input {
-  display: flex;
-  width: 120px;
-  height: 4px;
-  margin: 20px;
-  border-radius: 24px;
-  border: 1px solid #dfe1e5;
-  background: rgba(255, 255, 255, 0.932);
-  padding: 25px;
-}
+.pearl {
 
-input:hover {
-  box-shadow: 0 0 8px 1px white;
-}
+    border-width: 2px;
+    text-align: center;
+    border-style: solid;
+    padding: 15px;
+    background-color: #edf6f9;
+    border: 10px double rgba(6, 83, 3, 0.774);
+    letter-spacing: 10px;
+    border-radius: 21px;
+    font-size: 80;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: rgba(6, 83, 3, 0.774);
 
-#search {
-  width: 150px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  font-size: 18px;
-  padding: 8px 20px 8px 40px;
-  border: 2px solid rgb(223, 223, 228);
-}
-
-#search:focus {
-  width: 100%;
-}
-
-.top-logo {
-  position: relative;
-
-  font-size: 180%;
-  font-family: "Alkatra", cursive;
- 
-}
-
-#introduction {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 0px 100% 0px 40%;
-  font-size: 20px;
-  letter-spacing: 0.1px;
-}
-
-.bg-img {
-  background-image: url(https://zelihapala.github.io/images/me.jpg);
-  background-size: cover;
-  background-position: center center;
-  width: 25%;
-  height: 600px;
-
-  border: 3px solid rgba(6, 114, 114, 0.301);
-  border-radius: 100px 0px 140px 0px;
-}
-
-.navcolor {
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  font-size: 40px;
-  text-align: center;
-  background-position: center;
-  text-shadow: 5px 3px rgba(15, 3, 3, 0.973);
-}
-
-.main {
-  height: 100%;
-  font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 20px 0px 60px;
-}
-
-.main .technology {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 30px;
-}
-
-.p-main {
-  font-size: 100%;
-}
-
-.paragraf-main {
-  width: 30%;
-  height: 100%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  color: rgb(49, 48, 48);
-}
-
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  padding: 1px 10px 1px 40px;
-  margin: 4px;
-  background-color: rgb(6, 114, 114);
-}
-
-.section-middle:hover {
-  background: rgba(3, 39, 39, 0.993);
-}
-
-li {
-  float: left;
-}
-
-li a {
-  color: rgb(255, 255, 255);
-  padding: 10px 40px;
-  text-decoration-line: none;
-  font-size: 20px;
-  display: flex;
-}
-
-.c-site-footer {
-  background-image: url(https://zelihapala.github.io/images/AL.jpg);
-  background-position: center center;
-  background-size: cover;
-  padding: 10px 0px;
-  margin-top:30px;
-  text-align: center;
-  border-top: solid 8px rgba(6, 114, 114, 0.993);
-  border-bottom: solid 8px rgba(6, 114, 114, 0.993);
-  display: flex;
-  justify-content: space-between;
-}
-
-.part {
-  width: 30%;
-}
-.social-media div {
-  display: inline;
-}
-.social-media div a {
-  background: rgb(5, 114, 114);
-  text-decoration: none;
-  color: rgba(255, 254, 255, 0.993);
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.397);
-  border-radius: 50%;
-  margin-right: 20px;
-  font-size: 30px;
-  overflow: hidden;
-  position: relative;
-  line-height: 50px;
-  text-align: center;
-}
-
-.social-media a {
-  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
-    border-top-right-radius 0.1s linear 0.1s,
-    border-bottom-right-radius 0.1s linear 0.2s,
-    border-bottom-left-radius 0.1s linear 0.3s;
-}
-
-.social-media .instagram a:hover {
-  background-color: rgb(182, 53, 124);
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-.social-media .twitter a:hover {
-  background-color: #41c9eb;
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-.social-media .youtube a:hover {
-  background-color: #bb0000;
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-.social-media .whatsapp a:hover {
-  background-color: #06803d;
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-.social-media .slack a:hover {
-  background-color: #530640;
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-#follow-me {
-  color: white;
-  font-size: 23px;
-  margin: 7px 0px 25px;
-}
-#copy {
-  color: white;
-  text-shadow: 1px solid black;
-  font-size: 20;
-  margin-top: 20px;
-}
-
-.mylogo {
-  width: 25%;
-  margin-left: 40px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: justify;
-}
-
-.container {
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-
-.tech {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  width: 35%;
 }
 
 
-.scroll {
-  font-weight: 100;
-  font-size: 19px;
-  font-weight: bolder;
-  color: rgba(6, 114, 114, 0.993);
-
-  animation: marquee 10s linear infinite}@-webkit-keyframes marquee {
-    0% {transform: translateX(100%);
-      }100% {
-     transform: translateX(-100%);
-      }}
-     @keyframes marquee {
-      0% {-moz-transform: translateX(100%);
-     -webkit-transform: translateX(100%);
-     transform: translateX(100%)
-}}
-
-
-.gallery {
-width: 650px;
-margin: 0px  auto;
-padding: 6px;
-background: #fff;
-box-shadow: 0 10px 2px pink;
+.start {
+    font-size: 20px;
+    font-style: italic;
+    background: #edf6f9;
+    padding: 28px;
+    color: rgb(145, 55, 6);
+    border: 2px rgb(172, 14, 80);
+    border-radius: 6px;
 
 }
 
-.gallery > div {
-position: relative;
-float: left;
-padding:5px;
+h1,
+h2 {
+    text-shadow: 3px 6px 8px rgb(145, 105, 140);
 }
 
-.gallery > div > img {
-display: block;
-width: 200px;
-height: 150px;
-transition: .1s transform;
-transform: translateZ(0); 
-}
+#img-three {
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    border-radius: 100%;
+    border: 6px solid rgba(6, 83, 3, 0.774);
 
-.gallery > div:hover {
-z-index: 2;
-}
-
-.gallery > div:hover > img {
-transform: scale(1.7,1.7);
-transition: .4s transform;
-}
-
-.pic:before, .pic:after {
-display: table;
-content: "";
-line-height: 0;
 
 }
 
-.pic:after {
-clear: both;
+
+.group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    color: rgb(26, 14, 5);
+    font-size: 18px;
 }
 
-h1 {
- font-size: 20px;
-  letter-spacing: 0.1px;
 
-margin: 10px 0;
+.three-column {
+    width: 30%;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.432);
+    padding: 14px;
+    color: rgb(145, 55, 6);
+    border: 2px rgb(172, 14, 80);
+    border-radius: 6px;
 
-font-weight: 300;
-text-align: center;
 }
+
+.footer {
+    background-image: url(images/ephesus-ancient-city.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 2%;
+    border-radius: 8px;
+
+}
+
+#footer-info {
+
+    width: 40%;
+    background: rgba(255, 255, 255, 0.432);
+    padding: 14px;
+    border-radius: 6px;
+    display: block;
+    margin-right: none;
+    margin-left: auto;
+
+}
+
+.foot-nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+    box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.75);
+
+}
+
+.footer-menu {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 30px;
+
+}
+
+.a:hover {
+    color: rgba(57, 4, 68, 0.925);
+  
+}
+
+
